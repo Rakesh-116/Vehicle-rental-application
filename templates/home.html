@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Ikuzo:Home</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="h1">Ikuzo</h1>
+        <p class="p1" onclick="goToHome()">Home</p>
+        <p class="p1" onclick="goToVehicles()">Vehicles</p>
+        <p class="p1" onclick="goToAboutUs()">About Us</p>
+        <p class="p1" style="color:#000;">Safety</p>
+        <p class="p1" style="color:#000;">Reviews</p>
+        <!-- <p class="p1" onclick="logIn()">Log In</p>
+        <p class="p1" onclick="signIn()">Sign In</p> -->
+    </div>
+
+    <div class="home-background" style="background-image: url('{% static 'pics\home_bg.jpg' %}')">
+        <div class="location-container">
+            
+            <div class="container-2 d-flex flex-row p-3">
+                <div class="ml-5">
+                    <label class="input-heading" for="locationInput">Location</label>
+                    <div id="locationInput" class="location d-flex flex-row">
+                        <div class="color" style="background-color: #49df03"></div>
+                        <input type="text" id="locationInput" placeholder="Search Places" required>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-crosshair mt-1 ml-5" viewBox="0 0 16 16">
+                            <path d="M8.5.5a.5.5 0 0 0-1 0v.518A7.001 7.001 0 0 0 1.018 7.5H.5a.5.5 0 0 0 0 1h.518A7.001 7.001 0 0 0 7.5 14.982v.518a.5.5 0 0 0 1 0v-.518A7.001 7.001 0 0 0 14.982 8.5h.518a.5.5 0 0 0 0-1h-.518A7.001 7.001 0 0 0 8.5 1.018V.5Zm-6.48 7A6.001 6.001 0 0 1 7.5 2.02v.48a.5.5 0 0 0 1 0v-.48a6.001 6.001 0 0 1 5.48 5.48h-.48a.5.5 0 0 0 0 1h.48a6.002 6.002 0 0 1-5.48 5.48v-.48a.5.5 0 0 0-1 0v.48A6.001 6.001 0 0 1 2.02 8.5h.48a.5.5 0 0 0 0-1h-.48ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="ml-5">
+                    <label class="input-heading" for="orderDateInput">Pick-Up Date</label>
+                    <div id="orderDateInput" class="location d-flex flex-row">
+                        <div class="color" style="background-color: #e85e55;"></div>
+                        <input type="date" id="pickupInput" placeholder="Enter order date" required>
+                    </div>
+                </div>
+                <div class="ml-5">
+                    <label class="input-heading" for="returnDateInput">Return Date</label>
+                    <div id="returnDateInput" class="location d-flex flex-row">
+                        <div class="color" style="background-color: #dfd803;"></div>
+                        <input type="date" id="returnInput" placeholder="Enter return date" required>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="btn btn-primary container-2-btn" onclick="goToVehicles()">Search Rentals &rarr;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-container p-5">
+
+        <div class="working-container p-5">
+            <p class="working-h1">HOW IT WORKS</p>
+            <h1 class="working-h2">Rent With 3 Easy Steps</h1>
+            <div class="d-flex flex-row justify-content-around pt-5">
+                <div class="working-content text-center">
+                    <h1 class="working-h3">Choose A Location</h1>
+                    <p>Write the name of the location where you desire to go.</p>
+                </div>
+
+                <div class="working-content text-center">
+                    <h1 class="working-h3">Pick-Up Date</h1>
+                    <p>Choose a date for picking up the Vehicle.</p>
+                </div>
+
+                <div class="working-content text-center">
+                    <h1 class="working-h3">Return Date</h1>
+                    <p>Choose a date for returning the date.</p>
+                </div>
+            </div>
+        </div>
+<!-- 
+        <h1 class="about-heading">There’s A Ride For Everyone</h1>
+        <div class="d-flex flex-row justify-content-around">
+            <div class="about-img-container">
+                <img src="{% static 'c8 (2).jpg' %}" class="about-img">
+                <p>For any Budget</p>
+            </div>
+            <div class="about-img-container">
+                <img src="{% static 'c8 (3).jpg' %}" class="about-img">
+                <p>For any Budget</p>
+            </div>
+            <div class="about-img-container">
+                <img src="{% static 'c8 (4).jpg' %}" class="about-img">
+                <p>For any Budget</p>
+            </div>
+        </div> -->
+    </div>
+
+    <div class="contact-us text-center p-5 text-white">
+        <h1 class="contact-us-heading mb-5">Contact Us</h1>
+        <div class="d-flex flex-row justify-content-around">
+            <p class=""><b>Toll Free:</b> 1234 5678<br><b>Fax:</b> 1224 1232 1423</p>
+            
+            <p class=""><b>Mail: </b>ikuzo@gmail.com<br>abhyudayIkuzo@gmail.com</p>
+            
+            <p class=""><b>KLH university</b><br>Aziznagar</p>
+        </div>
+    </div>
+
+    <script src="{% static 'js/home.js' %}"></script>
+</body>
+</html>
+
+
+

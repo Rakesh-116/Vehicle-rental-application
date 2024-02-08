@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/aboutUs.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Ikuzo:AboutUs</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="h1">Ikuzo</h1>
+        <p class="p1" onclick="goToHome()">Home</p>
+        <p class="p1" onclick="goToVehicles()">Vehicles</p>
+        <p class="p1" onclick="goToAboutUs()">About Us</p>
+        <p class="p1" style="color:#000;">Safety</p>
+        <p class="p1" style="color:#000;">Reviews</p>
+    </div>
+    <div id="aboutUs" class="p-5">
+        <p class="aboutUs-h1">About Us</p>
+        <h1 class="aboutUs-h2">Best Customer Experience</h1>
+        <div class="d-flex flex-row">
+            <div>
+                <img src="{% static 'pics\jeep3.png' %}"  class="aboutUs-img">
+            </div>
+            <div class="pt-5">
+                <p style="color:orange; text-align: left;" class="aboutUs-h1">About Us</p>
+                <p>
+                    Online Vehicle Rental System
+                    
+                    An online vehicle rental system is a software solution that allows customers to reserve and rent vehicles online. This type of system is becoming increasingly popular, as it offers a number of advantages over traditional rental methods.
+                    
+                    One of the biggest advantages of online vehicle rental is convenience. Customers can browse and compare vehicles from different rental companies without having to visit multiple locations. They can also reserve vehicles in advance, which can save them time and hassle, especially if they are traveling to a popular destination during peak season.
+                    
+                    Another advantage of online vehicle rental is flexibility. Customers can choose from a wide variety of vehicles, including cars, trucks, SUVs, and vans. They can also specify the type of vehicle they need, such as a fuel-efficient car or a vehicle with all-wheel drive.</p>
+                 <button class="btn btn-primary">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-us text-center p-5 text-white">
+        <h1 class="contact-us-heading mb-5">Contact Us</h1>
+        <div class="d-flex flex-row justify-content-around">
+            <p class=""><b>Toll Free:</b> 1234 5678<br><b>Fax:</b> 1224 1232 1423</p>
+            
+            <p class=""><b>Mail: </b>ikuzo@gmail.com<br>abhyudayIkuzo@gmail.com</p>
+            
+            <p class=""><b>KLH university</b><br>Aziznagar</p>
+        </div>
+    </div>
+    <script src="{% static 'js\aboutUs.js' %}"></script>
+</body>
+</html>

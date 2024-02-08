@@ -1,0 +1,84 @@
+.navbar{
+    background-color: #000;
+    height:60px;
+}
+
+.body{
+    background-color: #f9fbfe;
+    height:80vh;
+}
+
+.h1{
+    font-weight: 400;
+    font-size: 30px;
+    cursor: pointer;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.p1{
+    font-size: 20px;
+    cursor: pointer;
+    color:white;
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.p1:hover{
+    background-color: rgb(105, 105, 105,0.5);
+    border-radius: 30px;
+}
+
+.h2{
+    color: #000;
+    font-family: roboto;
+    font-weight: 100;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.p2{
+    color: #000;
+    font-family: roboto;
+    font-weight: 100;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.login{
+    padding: 10px;
+    height: 400px;
+    width: 350px;
+    border-radius: 40px;
+    position:absolute;
+    top: 10%;
+}
+
+.btn1{
+    color:rgb(29, 116, 116);
+    border:none;
+    background: none;
+    margin-left:120px;
+}
+
+.btn2{
+    color:rgb(29, 116, 116);
+    border:none;
+    background: none;
+}
+
+.error-msg{
+    color:red;
+}
+
+.user-input{
+    background-color: white;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e4e7eb;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px;
+}

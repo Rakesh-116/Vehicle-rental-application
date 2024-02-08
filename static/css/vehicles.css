@@ -1,0 +1,104 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    background-color: #000;
+    height:60px;
+}
+
+.h1{
+    font-weight: 400;
+    font-size: 30px;
+    cursor: pointer;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.p1{
+    font-size: 20px;
+    cursor: pointer;
+    color:white;
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.p1:hover{
+    background-color: rgb(105, 105, 105,0.5);
+    border-radius:8px;
+}
+
+.side-nav{
+    width:25%;
+    background-color:rgb(24, 7, 62);
+    height:100vh;
+}
+
+.vp1{
+    color:white;
+    font-size: 30px;
+    margin-left: 10px;
+    width:100%;
+}
+
+.vp1:hover{
+    cursor: pointer;
+}
+
+.imgContainer{
+    height:320px;
+}
+
+.img{
+    width:400px;
+    height:240px;
+}
+
+.vehicleType{
+    background-color: #000;
+    color:white;
+    padding: 6px;
+}
+
+.vp2{
+    color:white;
+    display: inline-block;
+}
+
+.vp3{
+    margin-left: 180px;
+}
+
+.onclick-changes{
+    background-color: rgb(13, 2, 37);
+    color:aquamarine;
+    width:auto;
+    padding: 10px;
+}
+
+.cars{
+    display: block;
+}
+
+.buses{
+    display: none;
+}
+
+.autos{
+    display: none;
+}
+
+.bikes{
+    display: none;
+}
+
+.contact-us{
+    background-color: #01003e;
+    height:300px;
+}
+
+.contact-us-heading{
+    font-size: 35px;
+}

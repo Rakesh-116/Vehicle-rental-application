@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css\signIn.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Ikuzo:SignIn</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="h1">Ikuzo</h1>
+    </div>
+
+    <div class="body">
+        <form action="" method="POST"enctype="multipart/form-data">{% csrf_token %}
+            <div class="d-flex flex-row justify-content-center">
+                <div class="login">
+                    <h1 class="h2">Sign In</h1>
+                    <label class="p2" for="usernameInput">Create a Username</label>
+                    <input type="text" class="user-input" id="usernameInput" placeholder="Username" oninput="username()">
+                    <p class="error-msg" id="usernameError"></p>
+
+                    <label class="p2" for="emailInput">Enter your Email Address</label>
+                    <input type="text" class="user-input" id="emailInput" placeholder="Email" oninput="email()">
+                    <p class="error-msg" id="emailError"></p>
+
+                    <label class="p2" for="passwordInput">Enter new Password</label>
+                    <button class="btn1"  id="showPassword" onclick="signinShowPassword()">show</button>
+                    <input type="password" class="user-input" id="passwordInput" placeholder="Password" oninput="password()">
+                    <p class="error-msg" id="passwordError"></p>
+                    <label class="p2" for="confirmPasswordInput">Confirm your Password</label>
+                    <!-- <button class="btn1"  id="showPassword" onclick="signinShowPassword()">show</button> -->
+                    <input type="password" class="user-input" id="confirmPasswordInput" placeholder="Confirm Password" oninput="confirmPassword()">
+                    <p class="error-msg" id="confirmPasswordError"></p>
+                    <button class="btn btn-primary" style="display: block;" onclick="signIn()">Sign In</button>
+                    <br>
+                    <p class="p2"  style="display: inline;">Already have an Account?</p>
+                    <a class="btn2" href="logIn.html">Log In</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="{% static 'js\signIn.js' %}"></script>
+</body>
+</html>
